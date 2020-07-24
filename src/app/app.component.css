@@ -1,0 +1,30 @@
+h1 {
+    background-color: green;
+}
+
+ul li {
+    text-decoration-style: none;
+    background-color: rgb(172, 148, 103);
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    background: lightskyblue;
+    height:100px;
+    width:100%;
+    margin-bottom:30px;
+}
+
+button {
+    margin-top:5px;
+}
+
+nav {
+    background: black;
+    color:white;
+}
+
+nav:hover {
+    background: white;
+}
