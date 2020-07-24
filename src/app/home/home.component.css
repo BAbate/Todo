@@ -9,7 +9,6 @@ h1 {
 
 ul li {
     text-decoration-style: none;
-    background-color: rgb(172, 148, 103);
 }
 
 .container {
@@ -33,7 +32,7 @@ nav a  {
     text-decoration: none;
 }
 
-nav a li {
+li {
     list-style-type: none;
 }
 

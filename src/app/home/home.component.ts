@@ -10,8 +10,7 @@ export class HomeComponent implements OnInit {
 
   itemcounter: number;
   projectext = " ";
-  projects = ["biruk","hanna"];
-
+  projects = [];
   constructor() { }
 
   ngOnInit(): void {
