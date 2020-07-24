@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'todo';
   name = 'Biruk';
-  input= '';
+  value= '';
   todo: any = [
     {
       name:'Biruk',

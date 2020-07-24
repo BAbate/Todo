@@ -33,6 +33,8 @@ nav a  {
     text-decoration: none;
 }
 
-
+nav a li {
+    list-style-type: none;
+}
 
 

@@ -8,7 +8,7 @@
         <div class="containers">
           <div class="container color-dark">
             <div class="first">
-                <p>ADD ToDo Task</p>
+                <p>ADD ToDo Task New</p>
             </div>
         
             <div class="col">
@@ -23,11 +23,12 @@
         
             <div class="col">
               <form>
-                  <input type="text" name="projectname" value="data" [(ngModel)]="projectext" placeholder="input..."/> <br>
-                  <input type="submit" class="button" (onclick) = "add(projectext)"/>
+                  <input type="text" [(ngModel)]="projectext" name="projectext" placeholder="input..."/> <br>
+                  <button class="button" (click) = "add()">SUBMIT</button>
                 </form>
             </div>
           {{projectext}}
+
         </div>
         
         
