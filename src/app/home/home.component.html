@@ -14,7 +14,7 @@
             <div class="col">
                 <p>To do List:  {{itemcounter}}</p>
                 <ul>
-                    <li *ngFor="let item of projects">
+                    <li *ngFor="let item of projects; let i=index" (click)="removeitem(i)">
                         {{item}}
                     </li>
                 </ul>
@@ -23,11 +23,11 @@
         
             <div class="col">
               <form>
-                  <input type="text"  [(ngModel)]="projectname"  placeholder="input..."/> <br>
-                  <button (onclick) = "add(projectname)">ADD</button>
+                  <input type="text" name="projectname" value="data" [(ngModel)]="projectext" placeholder="input..."/> <br>
+                  <input type="submit" class="button" (onclick) = "add(projectext)"/>
                 </form>
             </div>
-        
+          {{projectext}}
         </div>
         
         

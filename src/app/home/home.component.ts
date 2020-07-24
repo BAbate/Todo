@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,8 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   itemcounter: number;
-  projectext: string = 'angular projects';
-  projects= [];
+  projectext: string;
+  projects= ["biruk","hanna"];
 
   constructor() { }
 
@@ -17,12 +18,12 @@ export class HomeComponent implements OnInit {
     this.itemcounter = this.projects.length;
   }
 
-  add(input) {
-    console.log(input);
-    this.projects.push(input);
+  add(projectsname) {
+    console.log(projectsname);
+    this.projects.push(projectsname);
   }
 
-  remove(input) {
-    this.projects.pop();
+  remove(i) {
+    this.projects.slice(i,1);
   }
 }
