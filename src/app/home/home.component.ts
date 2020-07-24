@@ -7,11 +7,22 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  @Input() public parentdata;
-  
+  itemcounter: number;
+  projectext: string = 'angular projects';
+  projects= [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.itemcounter = this.projects.length;
   }
 
+  add(input) {
+    console.log(input);
+    this.projects.push(input);
+  }
+
+  remove(input) {
+    this.projects.pop();
+  }
 }

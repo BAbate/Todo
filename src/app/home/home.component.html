@@ -12,14 +12,19 @@
             </div>
         
             <div class="col">
-                <p>To do List</p>
+                <p>To do List:  {{itemcounter}}</p>
+                <ul>
+                    <li *ngFor="let item of projects">
+                        {{item}}
+                    </li>
+                </ul>
             </div>
           </div>
         
             <div class="col">
               <form>
-                  <input #myinput type="text" name= "projectname" value="inputs" placeholder="input..."/> <br>
-                  <button (onclick) = "add(myinput)">ADD</button>
+                  <input type="text"  [(ngModel)]="projectname"  placeholder="input..."/> <br>
+                  <button (onclick) = "add(projectname)">ADD</button>
                 </form>
             </div>
         
