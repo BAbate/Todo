@@ -1,3 +1,8 @@
+body {
+    padding:50px;
+    background-color: rgb(194, 194, 235);
+}
+
 h1 {
     background-color: green;
 }
@@ -21,10 +26,9 @@ button {
 }
 
 nav {
-    background: black;
     color:white;
 }
 
-nav:hover {
-    background: white;
+nav a  {
+    text-decoration: none;
 }
