@@ -34,7 +34,11 @@
         
         <!-- app-home [parentdata]="name"></app-home>-->
         
-        
+        <div>
+            <ul>
+                <li *ngFor="let a of user"> {{a.name}}   {{a.lastname}}</li>
+            </ul>
+        </div>
         
         
         </body>

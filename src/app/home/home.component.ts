@@ -11,6 +11,24 @@ export class HomeComponent implements OnInit {
   itemcounter: number;
   projectext = " ";
   projects = [];
+
+  user: any =  [
+   {
+     name:'biruk',
+     lastname: 'abate'
+   },
+   {
+     name:'airuk',
+     lastname:'dejene'
+   },
+   {
+    name:'biruk',
+    lastname: 'abate'
+  },
+  
+ 
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {NotfoundComponent} from './notfound/notfound.component';
 
 const routes: Routes = [
-  {path:'/', component: HomeComponent},
+  {path:'', component: HomeComponent},
   {path:'home', component: HomeComponent},
   {path:'contact', component: ContactComponent},
   {path:'**', component: NotfoundComponent}
